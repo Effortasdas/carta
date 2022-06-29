@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27 ♡</title>
+</head>
+<body bgcolor="#FCF3CF">
+   
+
+  
+    <center><h1>Escoge una opción putita</h1></center>
+    
+    <center><img src="https://i.pinimg.com/564x/38/42/3b/38423ba29b2194547bb3a55db6977b53.jpg" width="350" height="350"></center>
+    <center><button id="no">leer carta</button>
+        <button id="yes">rendirse</button>
+    </center>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+        const putear = () => {
+            alert('¿Esta seguro que desea cerrar la pagina?')
+        
+            location.href = 'https://www.xvideos.com/'
+        }
+        const quenolea = () => {
+            vutonNo.style.position ='absolute' ;
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px' ;
+            vutonNo.style.left = (Math.random() * window.innerWidth) + 'px' ;
+        }
+        vutonSi.addEventListener('click' , putear);
+        vutonNo.addEventListener('mouseover' , quenolea) ;
+    </script>
+    
+</body>
+
+    
+</html>
